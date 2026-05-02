@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Conversion Celsius to Fahrenheit"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup android:id="@+id/TempChoice"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CtoF"
+            android:text="C -> F"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FtoC"
+            android:text="F -> C"
+            android:layout_marginStart="15dp"/>
+    </RadioGroup>
+
+    <EditText android:id="@+id/TempInput"
+        android:hint="Entrer la valeur de la temperature"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/bouttonConvertTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        />
+
+    <TextView android:id="@+id/TempResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résultat de la conversion : -"
+        android:textSize="15sp"
+        android:layout_marginTop="7dp"
+        />
+</LinearLayout>
